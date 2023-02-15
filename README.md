@@ -12,7 +12,7 @@ A edição é limitada ao título da postagem ao link e a imagem q é exibida.
 
 ### Remoção dos posts
 
-A remoção dos posts é uma lógica, ou sejá não é definitivamente excluída mas não é mais listada.
+A remoção dos posts é lógica, ou sejá não é definitivamente excluída mas não é mais listada.
 
 ### Bibliotecas adicionais usadas
 
