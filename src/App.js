@@ -7,7 +7,8 @@ function App() {
   const [removeLoading, setRemoveLoading] = useState(false);
 
   function loadApp() {
-    setTimeout(setRemoveLoading(true), 5000)
+    setRemoveLoading(true)
+    setTimeout(5000);
   }
 
   useEffect(() => {
