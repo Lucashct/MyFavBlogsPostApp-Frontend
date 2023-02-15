@@ -8,9 +8,8 @@ import { Links } from './components/Links/Links';
 function App() {
   const [removeLoading, setRemoveLoading] = useState(false);
 
-  async function loadApp() {
-    const response = await axios.post(OPEN_APP)
-    if(response.data.activity === 'done') { setRemoveLoading(true); }
+  function loadApp() {
+    setTimeout(setRemoveLoading(true), 5000)
   }
 
   useEffect(() => {
