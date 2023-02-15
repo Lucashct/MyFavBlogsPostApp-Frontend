@@ -8,7 +8,7 @@ function App() {
 
   function loadApp() {
     setRemoveLoading(true)
-    setTimeout(5000);
+    setTimeout(() => {}, 5000);
   }
 
   useEffect(() => {

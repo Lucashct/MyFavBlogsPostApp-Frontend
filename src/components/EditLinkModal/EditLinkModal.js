@@ -20,11 +20,10 @@ export function EditLinkModal(props) {
   
   async function handleEditLink() {
     await axios.post(EDIT_LINK, props.linkData)
-    .then(response => {
-      alert(response.data.message);
+    .then(() => {
+      props.onCloseModal(true);
     });
-
-    props.onCloseModal(true);
+    
   }
 
   return(
