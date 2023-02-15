@@ -1,0 +1,79 @@
+fieldset {
+    border: 0px;
+}
+
+input {
+    border-top: 0px;
+    border-bottom: 1px solid;
+    border-left: 0px;
+    border-right: 0px;
+    margin-left: 3px;
+    width: 100%;
+}
+
+input:focus {
+    box-shadow: 0 1 0 0;
+    
+    border-top: 0px;
+    border-bottom: 2px solid;
+    border-left: 0px;
+    border-right: 0px;
+    outline: 0;
+}
+
+label {
+    margin-left: 1%;
+    color: #21035D;
+    font-weight: bold;
+}
+
+.formulario {
+    border-top: 1px solid gainsboro;
+    padding: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid gainsboro;
+}
+
+.footer-to-left {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.footer-to-right {  
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-to-left button {
+    height: 30px;
+    background-color: #D20606;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: gainsboro;
+}
+
+.footer-to-right button {
+    height: 30px;
+    background-color: #227B04;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: gainsboro;
+}
+
+button:hover {
+    cursor: pointer;
+    border: 1px solid black;
+}

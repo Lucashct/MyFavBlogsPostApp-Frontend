@@ -1,0 +1,119 @@
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.list-item {
+    list-style-type: none;
+}
+
+.container-body {
+    text-align: center;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #F9FBFE;
+}
+
+.container-main {
+    background-color: #00418c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.list {
+    background-color: #F9FBFE;
+    border: 0px;
+    border-radius: 20px;
+    padding: 20px;
+
+    max-width: 400px;
+    width: auto;
+    height: 450px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.list-item {
+    border-bottom: 1px solid ;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-item:hover {
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
+.container-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-edit {
+    background-color: #FEEB77;
+    border: 0px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-right: 5%;
+}
+
+.button-edit:hover {
+    border: 1px solid grey;
+}
+
+.button-remove {
+    background-color: #FC9C9C;
+    border: 0px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    width: 30px;
+    height: 30px;
+}
+
+.button-remove:hover {
+    border: 1px solid grey;
+}
+
+.resume-link {
+    background-color: #F9FBFE;
+    max-width: 600px;
+    width: auto;
+    height: 400px;
+    margin-left: 30px;
+    padding: 20px;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.container-resume {
+    max-width: 580px;
+    width: auto;
+    max-height: 380px;
+    height: auto;
+}
+
+.image-link {
+    width: 100%;
+    height: auto;
+}
+
+.tip-resume-link {
+    max-width: 580px;
+    width: auto;
+    margin-top: 50%;
+    height: auto;
+}
+
+.infos-resume {
+    text-align: start;
+}
