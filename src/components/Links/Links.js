@@ -5,13 +5,9 @@ import { BiTrashAlt } from 'react-icons/bi';
 import { EditLinkModal } from '../EditLinkModal/EditLinkModal'
 import { RemoveLinkModal } from '../RemoveLinkModal/RemoveLinkModal';
 import { toast, ToastContainer } from 'react-toastify';
+import { useState } from "react";
 
-import axios from "axios";
-import { LIST_LINKS } from "../../utils/urls";
-import { useState, useEffect } from "react";
-
-export function Links() {
-  const [linksList, setLinksList] = useState([]);
+export function Links(props) {
   const [selectedLink, setSelectedLink] = useState({});
   const [imgRecovered, setImageRecovered] = useState(false);
   const [isOpenModal, setIsOpenModal] = useState(false);
@@ -36,15 +32,6 @@ export function Links() {
     }
     
   }
-
-  async function getLinkList() {
-    const response = await axios.get(LIST_LINKS);
-    setLinksList(response.data);
-  }
-
-  useEffect(() => {
-    getLinkList();
-  }, []);
   
   function selectLink(link) {
     setSelectedLink(link)
@@ -59,7 +46,7 @@ export function Links() {
   function closeEditModal(action) {
     if(action) {notify('EDIT');}
     setIsOpenModal(false);
-    getLinkList();
+    props.handleGetLinkList();
   }
 
   function openRemoveModal(link) {
@@ -70,7 +57,7 @@ export function Links() {
   function closeRemoveModal(action) {
     if(action) { notify('REMOVE'); }
     setIsOpenRemoveModal(false);
-    getLinkList();
+    props.handleGetLinkList();
   }
 
   function edittingSelectLinkToEdit(value, propoerty) {
@@ -100,7 +87,7 @@ export function Links() {
       <h1>My Favorites Blogsposts App</h1>
       <div className='container-main'>
         <ul className='list'>
-          { linksList.map(item => {
+          { props.linksList.map(item => {
             return <li onDoubleClick={() => selectLink(item)} className="list-item" key={item.id}>
               {`${item.label.substr(0, 30)}...`}
               <div className='container-buttons'>
