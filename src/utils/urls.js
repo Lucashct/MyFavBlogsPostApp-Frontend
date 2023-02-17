@@ -1,5 +1,5 @@
 //const BASE_URL = 'http://localhost:4000';
-const BASE_URL = 'https://myfavblogsposts.onrender.com';
+const BASE_URL = 'https://myfavblogspostapp-backend-production.up.railway.app';
 
 export const OPEN_APP = BASE_URL + '/'
 export const LIST_LINKS = BASE_URL + '/links';
