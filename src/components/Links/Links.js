@@ -6,6 +6,7 @@ import { EditLinkModal } from '../EditLinkModal/EditLinkModal'
 import { RemoveLinkModal } from '../RemoveLinkModal/RemoveLinkModal';
 import { toast, ToastContainer } from 'react-toastify';
 import { useState } from "react";
+import GithubLogo from '../../assets/GitHub-Logo.wine.svg'
 
 export function Links(props) {
   const [selectedLink, setSelectedLink] = useState({});
@@ -84,7 +85,16 @@ export function Links(props) {
   return(
     <div className='container-body'>
       <ToastContainer />
-      <h1>My Favorites Blogsposts App</h1>
+      <h2>My Favorites Blogsposts App</h2>
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignContent:'space-between',
+        color: 'gainsboro'
+      }}>
+        <img style={{ width:'25px', height: '25px' }} src={GithubLogo} alt='github logo'/>
+        <a style={{ color: '#FAFAFA' }} href='https://github.com/Lucashct/MyFavBlogsPostApp-Frontend' target='_blank' rel="noreferrer">Link repositório git</a>
+      </div>
       <div className='container-main'>
         <ul className='list'>
           { props.linksList.map(item => {

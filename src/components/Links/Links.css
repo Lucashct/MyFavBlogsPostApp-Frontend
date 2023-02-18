@@ -10,7 +10,7 @@
     text-align: center;
 }
 
-h1 {
+h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #F9FBFE;
 }
@@ -116,4 +116,8 @@ h1 {
 
 .infos-resume {
     text-align: start;
+}
+
+a:active {
+    color: #333333;
 }
