@@ -20,3 +20,4 @@ A remoção dos posts é lógica, ou sejá não é definitivamente excluída mas
 . React-Icons
 . React-Toastify
 
+Link para aplicação: https://myfavblogspostsapp.netlify.app/
